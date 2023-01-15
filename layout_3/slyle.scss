@@ -1,0 +1,100 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//alla bilder
+img {
+    //gör att boxarna passar i boxarna
+    width: 100%;
+    //tar bort det de utrummet osm blir under bilder
+    display: block;
+}
+
+//min stora rubrik
+h1 {
+    //font, text stil
+    font-family: 'Fasthand', cursive;
+    //text storlek
+    font-size: 4.375rem;
+}
+
+//mina underrubriker
+h2 {
+    //font, text storlek
+    font-family: 'Fasthand', cursive;
+}
+
+//brödtext
+p {
+    //font
+    font-family: 'Poppins', sans-serif;
+    //text tjocklek
+    font-weight: 300;
+    //text storlek
+    font-size: 1rem;
+    //över under och höger vänster, ville ha lite lufft mellan styckenna
+    padding: 2% 0;
+}
+
+.container {
+    background-color: #fff;
+    //gör att artikeln inte glider ut i oändlighetn, ville ha detta, tycker det blir för stort annars, sen tog jag ett standardmått
+    max-width: 64rem;
+    //aktiverar flexbox
+    display: flex;
+    //placerar artikeln imitten av användarens skärm
+    margin: auto;
+
+    .spallt {
+        //bredden på spalterna
+        flex: 0 0 33.33%;
+
+        //text under bilderna
+        figcaption {
+            //font, text stil
+            font-family: 'Poppins', sans-serif;
+            //fäg på texten, kan tycka den är lite ljus(?)
+            color: #525252;
+            //grö texten kursiv
+            font-style: italic;
+        }
+
+        //targettar bara den första spalten
+        .box-1 {
+            //aktiverar flexbox
+            display: flex;
+            //centrerar i y-led
+            align-items: center;
+            //centrerar i x-led
+            justify-content: center;
+            //Måste ha en höjd för att flex ska funka
+            height: 25rem;
+        }
+
+        //just för att färgen är unik
+        &.box-2 {
+            //den unika färgen som är för spalten
+            background-color: #FAFDF8;
+        }
+
+        .text {
+            //tycker det blir bättre med procent så den alltid är lite mindre än förälderns
+            max-width: 90%;
+            //för att få texten i mitten tycker det skulle vara onödligt med flex, sparrar på kod va B)
+            margin: auto;
+
+            &.boxV {
+                //aktiverar felxbox
+                display: flex;
+                //centrearr i x-led
+                justify-content: center;
+                //gör att inehållet lägger sig under varandra (lägger sig i y-led)
+                flex-wrap: wrap;
+
+            }
+        }
+    }
+}

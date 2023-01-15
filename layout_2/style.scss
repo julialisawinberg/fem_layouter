@@ -1,0 +1,78 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//gillar inte att lägga saker på bodyn men denna ska alltid vara bakrundsfärgen, oavsätt storlek
+body {
+    background-color: #D2DAE2;
+}
+
+.main-header {
+    background-color: #1E272E;
+    //höjd
+    height: 100px;
+    //får inte vara större än
+    max-width: 1160px;
+    //placerar den i mitten av användarens skärm
+    margin: auto;
+}
+
+//rubriken
+h1 {
+    /* bara för att fjäska har jag din font favorit */
+    font-family: 'Poppins', sans-serif;
+    //tjocklek på text
+    font-weight: 500px;
+    //textstorlek
+    font-size: 100px;
+}
+
+.heroimage {
+    background-color: #3C40C6;
+    /* denna kommer alltid ta upp hela skärmen */
+    white-space: 100%;
+    //höjd på boxen, det är för lite inehåll för att den ska fylla ut sig sjävv
+    height: 350px;
+    //aktiverar flexbox, för att centrerar rubriken
+    display: flex;
+    //centrerar i x-led
+    justify-content: center;
+    //centrerar i y-led
+    align-items: center;
+}
+
+/* här ligger endast den vita bakrunden och bilderna */
+.container {
+    background-color: #FFFFFF;
+    //samma max bredd som på header
+    max-width: 1160px;
+    //höjden på boxen
+    height: 630px;
+    //för att boxen är centrerd på användarens skärm
+    margin: auto;
+    //aktiverar flexbox, för att centrera de vista boxarna
+    display: flex;
+    /* Den här fixar biffen (gör att boxarna hamnar undervarandra i boxen) */
+    flex-wrap: wrap;
+    //skapar mellanrum mellan boxarna
+    justify-content: space-between;
+    //sätter boxarna högre upp
+    align-content: flex-start;
+    //skapar utrymme runt boxarna
+    padding: 2%;
+
+    /* Bilderna */
+    .bilder {
+        //nödväntigt efetsom inget finns i dem
+        height: 200px;
+        background-color: #485460;
+        /* Efter min smarta uträkning så hoppas jade detta stämmer */
+        //bred på boxarna
+        flex: 0 0 32%;
+        //gör utrymme mellan boxarna
+        margin-bottom: 2%;
+    }
+}

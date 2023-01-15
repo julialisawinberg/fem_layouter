@@ -1,0 +1,103 @@
+@charset "UTF-8";
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.125rem;
+}
+
+.brödtext {
+  margin: 1.125rem 0;
+}
+
+.brodtext-bild {
+  margin-bottom: 3.75rem;
+}
+
+h2 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.125rem;
+  margin-top: 0.8125rem;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+.visa-alla {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+}
+
+.container .left-nav {
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 3.75rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 1.875rem;
+}
+.container .left-nav .text-nav {
+  color: rgb(255, 255, 255);
+  font-size: 1.875rem;
+}
+.container .spallt {
+  margin: auto;
+  max-width: 700px;
+}
+.container .spallt .main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.75rem;
+  border-bottom: 2px solid black;
+}
+.container .spallt .right-nav {
+  position: fixed;
+  top: 1.875rem;
+  right: 1.875rem;
+}
+.container .spallt .rubriken {
+  font-size: 4.25rem;
+  font-family: "Noto Serif Georgian", serif;
+  margin: 3.75rem 0;
+}
+.container .spallt .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.container .spallt .text .text-box {
+  flex: 0 0 60%;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  margin-bottom: 1.75rem;
+}
+.container .spallt .info-box {
+  width: 30%;
+  font-size: 1, 125;
+  border-top: 2px solid black;
+}
+.container .spallt .info-box .info-box-text {
+  border-bottom: 2px solid black;
+  margin-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}/*# sourceMappingURL=style.css.map */

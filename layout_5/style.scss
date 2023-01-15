@@ -1,0 +1,97 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//style för artikelns rubrik
+h1 {
+    color: #B7000C;
+    //textstorlek
+    font-size: 5rem;
+    //font
+    font-family: 'Roboto Slab', serif;
+}
+
+//style för brödtext och det kursiva
+p {
+    //för att skapa mellanrum mellan raderna
+    padding-top: 2rem;
+    //radavstånd
+    line-height: 1.5rem;
+}
+
+
+.container {
+
+    .opening {
+        //dessa två gör att bilden fyller hela skärmen
+        height: 100vh;
+        width: 100vw;
+        //att bilden inte repiteras
+        background-size: cover;
+        //bilden
+        background-image: url('img/running.jpg');
+        //när bilden skalas ner ska den vara centrerad
+        background-position: center;
+        //för att styra över ikonen
+        //aktivera flex
+        display: flex;
+        //centrera i x-led
+        justify-content: center;
+
+        //för tydligheten
+        .pil-ner {
+
+            //style för ikonen
+            .material-symbols-outlined {
+                //för att placera ikonen i botten och med denna formel så sitter den där
+                position: absolute;
+                //palcerar ikonen i botten av bilden
+                bottom: 2rem;
+                //vile ha den svart för tyckte den syntes bättre
+                color: black;
+                //storlek på ikonen
+                font-size: 3rem;
+            }
+        }
+    }
+
+    .text-section {
+        max-width: 1040px;
+        //centrera container
+        margin: auto;
+        //akriverar felx-box
+        display: flex;
+        //skapar mellanum mellan spalterna
+        justify-content: space-between;
+        //över under och höger vänster
+        padding: 2rem 0;
+
+        .spalltV {
+            //spalltens bredd, får inte växa får inte krympa men ska ta 55% av föräldern
+            flex: 0 0 55%;
+
+            .text-left {
+                //font på brödtext, placeras hör eftersom den fått en klass
+                font-family: 'Roboto', sans-serif;
+            }
+        }
+
+        .spalltH {
+            flex: 0 0 30%;
+            //aktiverar flexbox
+            display: flex;
+            //cenrera i x-led
+            justify-content: center;
+            //centrerar i y-led
+            align-items: center;
+
+            .text-right {
+                //font på kursivtext, placeras hör eftersom den fått en klass
+                font-family: 'Open Sans', sans-serif;
+            }
+        }
+    }
+}

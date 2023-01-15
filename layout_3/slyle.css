@@ -1,0 +1,60 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+h1 {
+  font-family: "Fasthand", cursive;
+  font-size: 4.375rem;
+}
+
+h2 {
+  font-family: "Fasthand", cursive;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 2% 0;
+}
+
+.container {
+  background-color: #fff;
+  max-width: 64rem;
+  display: flex;
+  margin: auto;
+}
+.container .spallt {
+  flex: 0 0 33.33%;
+}
+.container .spallt figcaption {
+  font-family: "Poppins", sans-serif;
+  color: #525252;
+  font-style: italic;
+}
+.container .spallt .box-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25rem;
+}
+.container .spallt.box-2 {
+  background-color: #FAFDF8;
+}
+.container .spallt .text {
+  max-width: 90%;
+  margin: auto;
+}
+.container .spallt .text.boxV {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}/*# sourceMappingURL=slyle.css.map */

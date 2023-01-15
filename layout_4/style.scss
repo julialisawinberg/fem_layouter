@@ -1,0 +1,172 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    //tar bort standard avståndet som blir under bilden
+    display: block;
+    //bildens storlek anpassas till boxen
+    width: 100%;
+}
+
+a {
+    //för att ta bort den blåa färgen på länkarna
+    color: #000000;
+    //tar bort understrecket
+    text-decoration: none;
+    //font
+    font-family: 'Roboto Condensed', sans-serif;
+    //Text storlek
+    font-size: 1.125rem;
+}
+
+.brödtext {
+    //topp bottom, left rigtht.
+    margin: 1.125rem 0;
+}
+
+.brodtext-bild {
+    //puttar ner bordern
+    margin-bottom: 3.75rem;
+}
+
+//rubrikerna i infobox
+h2 {
+    //font
+    font-family: 'Roboto Condensed', sans-serif;
+    //textstorlek
+    font-size: 1.125rem;
+    //skapar luft mellan rubrik och info
+    margin-top: 0.8125rem;
+}
+
+p {
+    //font brödtext och info
+    font-family: 'Roboto', sans-serif;
+    //font tjocklek
+    font-weight: 100;
+    //textstorlek
+    font-size: 1.125rem;
+    //radavstånd
+    line-height: 1.5rem;
+}
+
+//finns för att den a taggen ska vara unik
+.visa-alla {
+    //font över unik a tagg
+    font-family: 'Roboto Condensed', sans-serif;
+    //font tjocklek
+    font-weight: 700;
+}
+
+.container {
+
+    .left-nav {
+        background-color: #000000;
+        //den skrollar med men det ser ut som att den täcker hela sidan ner, gör att absolut också fölejr med
+        position: fixed;
+        //fixerar i toppen
+        top: 0;
+        //fixerar till vänster av sidan
+        left: 0;
+        //bred på nav
+        width: 3.75rem;
+        //höjden fyller hela skärmen
+        height: 100vh;
+        //aktiverar flex
+        display: flex;
+        //för att få F alltid i mitten
+        justify-content: center;
+        //skapa mellanrum mellan toppen och F
+        padding-top: 1.875rem;
+
+        //stule på F i nav
+        .text-nav {
+            color: rgb(255, 255, 255);
+            //font storlek
+            font-size: 1.875rem;
+        }
+    }
+
+    .spallt {
+        //centrerar inehållet till mitten av sidan
+        margin: auto;
+        //spallten håller sig till lite mer av sidan oavnsett skörmstorlek
+        max-width: 700px;
+
+        .main-nav {
+            //aktiverar flexbox
+            display: flex;
+            //särar på a taggarna
+            justify-content: space-between;
+            //centrera a taggarna i y-led
+            align-items: center;
+            //höjd på a taggarna
+            height: 3.75rem;
+            //border under main nav
+            border-bottom: 2px solid black;
+
+        }
+
+        .right-nav {
+            //aktiverar position och låter den åka med ner när det srollas
+            position: fixed;
+            //håller sig denna avstånd från taket
+            top: 1.875rem;
+            //håller sig detta avstånd från höger sida
+            right: 1.875rem;
+        }
+
+        .rubriken {
+            //textstorlek
+            font-size: 4.25rem;
+            //font style
+            font-family: 'Noto Serif Georgian', serif;
+            //ansåg att utrymmet mellan text och nav som i  navet
+            margin: 3.75rem 0;
+        }
+
+        .text {
+            //aktiverar flexbox och placerar inehållet bervis varandra på x led
+            display: flex;
+            //trycker ut inehållet mot sidorna och skapar utrymme mellan dem
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .text-box {
+                //låter boxen vara 60% av förälden
+                flex: 0 0 60%;
+                //border under boxen
+                border-bottom: 2px solid black;
+                //border över boxen
+                border-top: 2px solid black;
+                //Ville inte att sidan skulle sluta jämte med min border bottom
+                margin-bottom: 1.75rem;
+            }
+        }
+
+        .info-box {
+            //det är 30% kavar av boxen och dettta gör att denna box fyller de utrymmet
+            width: 30%;
+            //text storlek
+            font-size: 1, 125;
+            //border över box
+            border-top: 2px solid black;
+
+            .info-box-text {
+                //border under box
+                border-bottom: 2px solid black;
+                //skapar mellanrum emllan text och border
+                margin-top: 1.75rem;
+                //skapar mellanrum mellan border under texten och texten
+                padding-bottom: 1.75rem;
+            }
+        }
+    }
+
+
+
+}
